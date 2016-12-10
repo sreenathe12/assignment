@@ -1,0 +1,48 @@
+/* Elements */
+body {
+	background-image: url(body4.jpg);
+}
+
+
+h1, h4 {
+	display:inline;
+
+}
+h4{
+	float: right;
+}
+h1{
+	margin-left: 3%;
+}
+address{
+	display: inline;
+}
+/* Classes */
+.navbar{
+	margin : 30px 20px 20px 20px;
+}
+.col-sm-3{
+	margin-left: 35%;
+	padding-top: 4%;
+}
+.submitted .ng-invalid{
+    border: 1px solid red;
+}
+.navbar-header{
+	margin-left: 6%;
+}
+.final-block{
+	margin-left: 36%;
+}
+.final-block h2 {
+	color: #808080;
+}
+
+/* Id */
+#banner{
+	margin-top: 1%;
+}
+#foot{
+	margin-left: 30%;
+	padding-left: 27%;
+}

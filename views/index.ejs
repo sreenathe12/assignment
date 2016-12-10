@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<!-- In header we provide meta data information -->
+<head>
+<title>Landing Page Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+                                                                        <!-- Bootstrap itself -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                                                               <!-- Fontawesome framework -->
+  <link rel="stylesheet" type="text/css" href="/asserts/css/font-awesome.css">
+                               <!-- Custom styles -->
+	<link rel="stylesheet" href="/asserts/style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                                                  <!-- Angular framework -->
+  <script src="/asserts/angular.min.js"></script>
+  <script src="/asserts/angular.js"></script>
+  </head>
+               <!-- Body  Section -->
+  <body ng-controller="maincontoller as c1">
+<div class="container-fluid">
+  <section id="banner">
+ <h1><i class="fa fa-car" aria-hidden="true"></i>Greg Auto Express </h1>
+ <h4 ><i class="fa fa-mobile" aria-hidden="true"></i>Call-Us:+1-816-WORK-HARD</h4>
+ </section>
+ <nav class="navbar navbar-inverse">  <!-- simple bootstrap nav section -->
+   <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="col-sm-3">
+<form class="form" id="contain" method="POST" action="/" name="formTest" ng-class="{'submitted':submitted}" ng-submit="save()">    <!-- name validation div !-->
+  <div class="form-group"><i class="fa fa-user-o" aria-hidden="true"></i>
+    <label for="name">Full name</label>
+    <input type="name" name="test" type="text" class="form-control" id="inputname" placeholder="enter name" ng-model="name" required/>
+    <span ng-show="formTest.test.$error.required && submitted">Fullname is required</span>
+  </div>                                                                              <!-- email validation div !-->
+  <div class="form-group"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+    <label for="email">Email address</label>
+    <input type="email" type="email" name="email" class="form-control" id="inputemail" placeholder="enter Email" ng-model="email" required/>
+    <span ng-show="formTest.email.$error.required && submitted">Email is required</span>
+    <span ng-show="formTest.email.$error.email && submitted">Invalid Email</span>
+  </div>
+   <button type="submit" id="sendmail" class="btn btn-primary" ng-click="submitted=true">Submit</button>
+</div>
+</form>
+</div>
+<div>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <h3 class="navbar-text">Autoshop Solutions Designs Win ‘Top 10 Auto Repair Website Awards’ For Sixth Year In A Row</h3>
+  </div>
+  </div>
+</nav>
+</div>
+<div class="final-block">
+  <h2><strong>Our Strength</h2></strong>
+  <ul class="group">
+    <li><i class="fa fa-rocket" aria-hidden="true"></i>The largest selection of vehicle inventory from dealers and private sellers</li>
+    <li><i class="fa fa-rocket" aria-hidden="true"></i>The most comprehensive selection of buying and selling tips</li>
+    <li><i class="fa fa-rocket" aria-hidden="true"></i>Vehicle pricing, including seller specials and dealer discounts</li>
+    <li><i class="fa fa-rocket" aria-hidden="true"></i>Safety information and vehicle history reports</li>
+    <ul>
+</div>
+<div><!-- footer  -->
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <address class="navbar-brand" id="foot">
+    135 Market Street, Suite 90
+    kansas city, MO 64103.
+    <a href="mailto:#">autowork.fix@example.com</a>
+  </address>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</body>
+  </html>

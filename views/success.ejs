@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<!-- In header we provide meta data information -->
+<head>
+<title>Landing Page Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+                                                                          <!-- Bootstrap itself -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                                                               <!-- Fontawesome framework -->
+  <link rel="stylesheet" type="text/css" href="/asserts/css/font-awesome.css">
+                               <!-- Custom styles -->
+	<link rel="stylesheet" href="/asserts/style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                                                  <!-- Angular framework -->
+  <script src="/asserts/angular.min.js"></script>
+  <script src="/asserts/angular.js"></script>
+  <style>
+h2 {
+    text-align: center;
+    margin-top: 20%;
+}
+</style>
+  </head>
+  <body ng-controller="maincontoller as c1">
+<h2>Thank you......, please check your mail  <%= data.email %></h2>
+</body>
+  </html>
